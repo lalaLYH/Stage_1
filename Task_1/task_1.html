@@ -94,7 +94,72 @@
         <li>第二名</li>
         <li>第三名</li>
     </ol>
-    <p>这是一个表格，设置了border="1"</p>
-    
+
+    <table border="1">
+        <caption>这是一个表格，设置了border="1"</caption>
+        <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+        </tr>
+        <tr>
+            <td>单元格的内容</td>
+            <td>单元格的内容</td>
+            <td>
+                <input type="submit" value="操作" name="operate" />
+            </td>
+        </tr>
+        <tr>
+            <td>单元格的内容</td>
+            <td>单元格的内容</td>
+            <td>
+                <input type="submit" value="操作" name="operate" />
+            </td>
+        </tr>
+        <tr>
+            <td>单元格的内容</td>
+            <td>单元格的内容</td>
+            <td>
+                <input type="submit" value="操作" name="operate" />
+            </td>
+        </tr>
+        <tr>
+            <td>总计</td>
+            <td colspan="2">100</td>
+        </tr>
+    </table>
+    <aside>
+        <h2>这将会是一个侧栏，这是侧栏的标题</h2>
+    </aside>
+
+    <form method="POST" action="save.php">
+        <h2>注册窗口标题</h2>
+        <label for="email">请输入你的邮箱地址：</label>
+        <input type="text" id="email" name="email" placeholder="这是一个文本输入框">
+        <p>请按要求输入你的邮箱</p>
+        <label for="password">请输入密码：</label>
+        <input type="text" id="password" name="password" placeholder="这是一个文本输入框">
+        <label for="repassword">请重复输入密码：</label>
+        <input type="text" id="repassword" name="repassword" placeholder="这是一个文本输入框">
+        <p>密码为6-16位字符</p>
+        <label>性别：</label>
+        <input type="radio" value="1" name="gender"> 男
+        <input type="radio" value="2" name="gender"> 女
+        <label>城市：</label>
+        <select>
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+            <option value="重庆" selected="selected">重庆</option>
+            <option value="广州">广州</option>
+        </select>
+        <label>爱好：</label>
+        <input type="checkbox" value="运动" name="hobby"> 运动
+        <input type="checkbox" value="音乐" name="hobby"> 音乐
+        <input type="checkbox" value="游戏" name="hobby"> 游戏
+        <input type="checkbox" value="摄影" name="hobby"> 摄影
+        <label>个人描述：</label>
+        <textarea rows="2" cols="33"  placeholder="这是一个多行输入框，可以输入个人的描述"></textarea>
+        <input type="submit" value="确认提交" name="submit">
+    </form>
 </body>
 </html>
